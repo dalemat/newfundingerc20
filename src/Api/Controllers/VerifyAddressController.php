@@ -1,11 +1,11 @@
 <?php
 
-namespace AcmeCorp\FlarumExt\MoneyErc20Funding\Api\Controllers;
+namespace acmecorp1\FlarumExt\MoneyErc20Funding\Api\Controllers;
 
 use Flarum\Api\Controller\AbstractCreateController;  // Line 4: Valid
 use Illuminate\Support\Str;  // Line 5: Valid
-use AcmeCorp\FlarumExt\MoneyErc20Funding\Services\SignatureVerifier;  // Line 6: Assumed service
-use AcmeCorp\FlarumExt\MoneyErc20Funding\Models\UserWallet;  // Line 7: Assumed model
+use acmecorp1\FlarumExt\MoneyErc20Funding\Services\SignatureVerifier;  // Line 6: Assumed service
+use acmecorp1\FlarumExt\MoneyErc20Funding\Models\UserWallet;  // Line 7: Assumed model
 
 class VerifyAddressController extends AbstractCreateController  // Line 9: Extends base
 {

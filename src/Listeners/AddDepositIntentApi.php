@@ -1,9 +1,9 @@
 <?php
 
-namespace AcmeCorp\FlarumExt\MoneyErc20Funding\Listeners;
+namespace acmecorp1\FlarumExt\MoneyErc20Funding\Listeners;
 
 use Flarum\Api\Event\WillSerializeData;
-use AcmeCorp\FlarumExt\MoneyErc20Funding\Models\DepositIntent;
+use acmecorp1\FlarumExt\MoneyErc20Funding\Models\DepositIntent;
 
 class AddDepositIntentApi
 {

@@ -3,7 +3,7 @@
 This extension integrates ERC20 token funding into Flarum's money system (extends `antoinefr/flarum-ext-money`). It allows users to fund accounts with automatic crediting.
 
 ## Installation
-1. Install via Composer: `composer require acmecorp/flarum-ext-money-erc20funding`
+1. Install via Composer: `composer require acmecorp1/flarum-ext-money-erc20funding`
 2. Enable in admin panel.
 3. Run `php flarum migrate`.
 4. Configure settings (RPC, address, etc.).

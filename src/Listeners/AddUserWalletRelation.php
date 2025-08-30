@@ -1,9 +1,9 @@
 <?php
 
-namespace AcmeCorp\FlarumExt\MoneyErc20Funding\Listeners;
+namespace acmecorp1\FlarumExt\MoneyErc20Funding\Listeners;
 
 use Flarum\Api\Event\SerializeIncludedData;
-use AcmeCorp\FlarumExt\MoneyErc20Funding\Models\UserWallet;
+use acmecorp1\FlarumExt\MoneyErc20Funding\Models\UserWallet;
 
 class AddUserWalletRelation
 {

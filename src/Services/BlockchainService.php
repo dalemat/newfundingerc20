@@ -1,6 +1,6 @@
 <?php
 
-namespace AcmeCorp\FlarumExt\MoneyErc20Funding\Services;
+namespace acmecorp1\FlarumExt\MoneyErc20Funding\Services;
 
 use Web3\Web3;
 use Flarum\Foundation\Application;
@@ -16,7 +16,7 @@ class BlockchainService
     public function __construct(SettingsRepositoryInterface $settings)
     {
         $this->settings = $settings;
-        $rpc = $settings->get('acmecorp-money-erc20.rpc_endpoint');
+        $rpc = $settings->get('acmecorp1-money-erc20.rpc_endpoint');
         if (!$rpc) {
             throw new \Exception('RPC endpoint required');
         }
@@ -26,10 +26,10 @@ class BlockchainService
 
     public function pollTransactions()
     {
-        $address = $this->settings->get('acmecorp-money-erc20.receiving_address');
-        $contract = $this->settings->get('acmecorp-money-erc20.erc20_contract');
+        $address = $this->settings->get('acmecorp1-money-erc20.receiving_address');
+        $contract = $this->settings->get('acmecorp1-money-erc20.erc20_contract');
         try {
-            $response = $this->httpClient->get("{$this->settings->get('acmecorp-money-erc20.explorer_url')}api?module=account&action=tokentx&address={$address}&contractaddress={$contract}&apikey={$this->settings->get('acmecorp-money-erc20.explorer_api_key')}");
+            $response = $this->httpClient->get("{$this->settings->get('acmecorp1-money-erc20.explorer_url')}api?module=account&action=tokentx&address={$address}&contractaddress={$contract}&apikey={$this->settings->get('acmecorp1-money-erc20.explorer_api_key')}");
             $data = json_decode($response->getBody(), true);
             // Process $data as needed (e.g., match transactions) - placeholder
             // Example: foreach ($data['result'] as $tx) { if ($tx['value'] == $intent->amount) { ... } }

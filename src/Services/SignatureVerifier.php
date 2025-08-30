@@ -1,6 +1,6 @@
 <?php
 
-namespace AcmeCorp\FlarumExt\MoneyErc20Funding\Services;
+namespace acmecorp1\FlarumExt\MoneyErc20Funding\Services;
 
 class SignatureVerifier
 {

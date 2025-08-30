@@ -1,10 +1,10 @@
 <?php
 
-namespace AcmeCorp\FlarumExt\MoneyErc20Funding\Api\Controllers;
+namespace acmecorp1\FlarumExt\MoneyErc20Funding\Api\Controllers;
 
 use Flarum\Api\Controller\AbstractCreateController;  // Line 4: Valid import
 use Illuminate\Support\Str;  // Line 5: Str class exists
-use AcmeCorp\FlarumExt\MoneyErc20Funding\Models\DepositIntent;  // Line 6: Model assumed to exist (create via migration)
+use acmecorp1\FlarumExt\MoneyErc20Funding\Models\DepositIntent;  // Line 6: Model assumed to exist (create via migration)
 use Flarum\User\Exception\PermissionDeniedException;  // Line 7: Valid exception
 use Flarum\Settings\SettingsRepositoryInterface;  // Line 8: Valid interface
 
@@ -29,8 +29,8 @@ class CreateDepositIntentController extends AbstractCreateController  // Line 10
             throw new \InvalidArgumentException('Invalid amount');  // Line 28: Exception ok
         }
 
-        $min = (float) $this->settings->get('acmecorp-money-erc20.min_deposit');  // Line 31: Cast to float
-        $max = (float) $this->settings->get('acmecorp-money-erc20.max_deposit');  // Line 32: Cast to float
+        $min = (float) $this->settings->get('acmecorp1-money-erc20.min_deposit');  // Line 31: Cast to float
+        $max = (float) $this->settings->get('acmecorp1-money-erc20.max_deposit');  // Line 32: Cast to float
         if ($amount < $min || $amount > $max) {  // Line 33: Range check
             throw new \InvalidArgumentException('Amount out of bounds');  // Line 34: Exception
         }
