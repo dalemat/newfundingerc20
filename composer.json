@@ -1,0 +1,22 @@
+{
+    "name": "acmecorp/flarum-ext-money-erc20funding",
+    "description": "Flarum extension for funding user money accounts with ERC20 tokens.",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.8",
+        "antoinefr/flarum-ext-money": "^1.0",
+        "web3p/web3.php": "^0.3",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AcmeCorp\\FlarumExt\\MoneyErc20Funding\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Money ERC20 Funding"
+        }
+    }
+}
