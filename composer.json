@@ -1,5 +1,5 @@
 {
-    "name": "acmecorp/flarum-ext-money-erc20funding",
+    "name": "acmecorp1/flarum-ext-money-erc20funding",
     "description": "Flarum extension for funding user money accounts with ERC20 tokens.",
     "type": "flarum-extension",
     "license": "MIT",
@@ -11,7 +11,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AcmeCorp\\FlarumExt\\MoneyErc20Funding\\": "src/"
+            "AcmeCorp1\\FlarumExt\\MoneyErc20Funding\\": "src/"
         }
     },
     "extra": {
