@@ -1,5 +1,5 @@
 {
-    "name": "dalemat/newfundingerṣ20",
+    "name": "dalemat/newfundingerc20",
     "description": "Flarum extension for funding user money accounts with ERC20 tokens.",
     "type": "flarum-extension",
     "license": "MIT",
@@ -15,9 +15,8 @@
         }
     },
     "extra": {
-        "flarum": {
-            "frontend": "forum",
-            "backend": "admin"
+        "flarum-extension": {
+            "id": "dalemat-newfundingerc20"
         }
     }
 }
