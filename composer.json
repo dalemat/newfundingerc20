@@ -1,5 +1,5 @@
 {
-    "name": "acmecorp1/flarum-ext-money-erc20funding",
+    "name": "dalemat/newfundingerṣ20",
     "description": "Flarum extension for funding user money accounts with ERC20 tokens.",
     "type": "flarum-extension",
     "license": "MIT",
